@@ -19,20 +19,20 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вконтакте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJM-x1-ubd">
-                                        <rect key="frame" x="107" y="100" width="200" height="42"/>
-                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="35"/>
+                                        <rect key="frame" x="107" y="100" width="200" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BJ-gJ-yB6">
-                                        <rect key="frame" x="163" y="168" width="88" height="25.5"/>
+                                        <rect key="frame" x="163" y="166.5" width="88" height="25.5"/>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-VB-AL5">
-                                        <rect key="frame" x="107" y="201.5" width="200" height="34"/>
+                                        <rect key="frame" x="107" y="200" width="200" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="bEZ-3r-e0m"/>
                                         </constraints>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2z-lq-8J3">
-                                        <rect key="frame" x="107" y="304" width="200" height="34"/>
+                                        <rect key="frame" x="107" y="302.5" width="200" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="GSy-ms-JZ2"/>
                                         </constraints>
@@ -54,7 +54,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfF-IF-Bp5">
-                                        <rect key="frame" x="163" y="384" width="88" height="40"/>
+                                        <rect key="frame" x="163" y="382.5" width="88" height="40"/>
                                         <color key="backgroundColor" red="0.27639101300000002" green="0.41624247399999997" blue="0.82142568010000006" alpha="0.46397123550000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
                                         <state key="normal" title="Вход">
@@ -65,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1V-OF-pnu">
-                                        <rect key="frame" x="149" y="270.5" width="116" height="25.5"/>
+                                        <rect key="frame" x="149" y="269" width="116" height="25.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
