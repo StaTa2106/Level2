@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		59EA855F2578F7F70044C0F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA855E2578F7F70044C0F2 /* AppDelegate.swift */; };
 		59EA85612578F7F70044C0F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA85602578F7F70044C0F2 /* SceneDelegate.swift */; };
-		59EA85632578F7F70044C0F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA85622578F7F70044C0F2 /* ViewController.swift */; };
 		59EA85662578F7F70044C0F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EA85642578F7F70044C0F2 /* Main.storyboard */; };
 		59EA85682578F7F90044C0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59EA85672578F7F90044C0F2 /* Assets.xcassets */; };
 		59EA856B2578F7F90044C0F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EA85692578F7F90044C0F2 /* LaunchScreen.storyboard */; };
 		59EA85762578F7FA0044C0F2 /* lesson1SundukovaTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA85752578F7FA0044C0F2 /* lesson1SundukovaTTests.swift */; };
 		59EA85812578F7FA0044C0F2 /* lesson1SundukovaTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA85802578F7FA0044C0F2 /* lesson1SundukovaTUITests.swift */; };
+		59EA85A02578F9800044C0F2 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA859F2578F9800044C0F2 /* LoginFormController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		59EA855B2578F7F70044C0F2 /* lesson1SundukovaT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson1SundukovaT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EA855E2578F7F70044C0F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59EA85602578F7F70044C0F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		59EA85622578F7F70044C0F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59EA85652578F7F70044C0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59EA85672578F7F90044C0F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59EA856A2578F7F90044C0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		59EA857C2578F7FA0044C0F2 /* lesson1SundukovaTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lesson1SundukovaTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EA85802578F7FA0044C0F2 /* lesson1SundukovaTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lesson1SundukovaTUITests.swift; sourceTree = "<group>"; };
 		59EA85822578F7FA0044C0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59EA859F2578F9800044C0F2 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				59EA855E2578F7F70044C0F2 /* AppDelegate.swift */,
 				59EA85602578F7F70044C0F2 /* SceneDelegate.swift */,
-				59EA85622578F7F70044C0F2 /* ViewController.swift */,
 				59EA85642578F7F70044C0F2 /* Main.storyboard */,
+				59EA859F2578F9800044C0F2 /* LoginFormController.swift */,
 				59EA85672578F7F90044C0F2 /* Assets.xcassets */,
 				59EA85692578F7F90044C0F2 /* LaunchScreen.storyboard */,
 				59EA856C2578F7F90044C0F2 /* Info.plist */,
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59EA85632578F7F70044C0F2 /* ViewController.swift in Sources */,
+				59EA85A02578F9800044C0F2 /* LoginFormController.swift in Sources */,
 				59EA855F2578F7F70044C0F2 /* AppDelegate.swift in Sources */,
 				59EA85612578F7F70044C0F2 /* SceneDelegate.swift in Sources */,
 			);
@@ -443,7 +443,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-----------------.lesson1SundukovaT";
+				PRODUCT_BUNDLE_IDENTIFIER = com.StaTa.lesson1SundukovaT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-----------------.lesson1SundukovaT";
+				PRODUCT_BUNDLE_IDENTIFIER = com.StaTa.lesson1SundukovaT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

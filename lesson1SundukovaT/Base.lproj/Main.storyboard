@@ -1,24 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Form Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginFormController" customModule="lesson1SundukovaT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXX-t4-Mq4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вконтакте" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJM-x1-ubd">
+                                        <rect key="frame" x="107" y="100" width="200" height="42"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BJ-gJ-yB6">
+                                        <rect key="frame" x="163" y="168" width="88" height="25.5"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-VB-AL5">
+                                        <rect key="frame" x="107" y="201.5" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="bEZ-3r-e0m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="loginField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="5cd-Vu-pT0"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2z-lq-8J3">
+                                        <rect key="frame" x="107" y="304" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="GSy-ms-JZ2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="passwordField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="inJ-VE-f0l"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfF-IF-Bp5">
+                                        <rect key="frame" x="163" y="384" width="88" height="40"/>
+                                        <color key="backgroundColor" red="0.27639101300000002" green="0.41624247399999997" blue="0.82142568010000006" alpha="0.46397123550000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                        <state key="normal" title="Вход">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUD-zk-wzO"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1V-OF-pnu">
+                                        <rect key="frame" x="149" y="270.5" width="116" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IfF-IF-Bp5" secondAttribute="bottom" constant="340" id="07Y-vN-ZQ6"/>
+                                    <constraint firstItem="GXM-VB-AL5" firstAttribute="top" secondItem="5BJ-gJ-yB6" secondAttribute="bottom" constant="8" id="AGu-9y-mOR"/>
+                                    <constraint firstAttribute="trailing" secondItem="IfF-IF-Bp5" secondAttribute="trailing" constant="163" id="Bh2-SL-OyD"/>
+                                    <constraint firstItem="uJM-x1-ubd" firstAttribute="centerX" secondItem="nXX-t4-Mq4" secondAttribute="centerX" id="ByH-zH-D1T"/>
+                                    <constraint firstAttribute="trailing" secondItem="5BJ-gJ-yB6" secondAttribute="trailing" constant="163" id="GPW-4o-u5I"/>
+                                    <constraint firstAttribute="trailing" secondItem="a2z-lq-8J3" secondAttribute="trailing" constant="107" id="Jzp-cj-enJ"/>
+                                    <constraint firstItem="a2z-lq-8J3" firstAttribute="centerX" secondItem="nXX-t4-Mq4" secondAttribute="centerX" id="MtM-3H-LAx"/>
+                                    <constraint firstAttribute="trailing" secondItem="z1V-OF-pnu" secondAttribute="trailing" constant="149" id="Og4-5W-UrJ"/>
+                                    <constraint firstItem="5BJ-gJ-yB6" firstAttribute="centerX" secondItem="nXX-t4-Mq4" secondAttribute="centerX" id="QIl-bi-Vpq"/>
+                                    <constraint firstAttribute="trailing" secondItem="GXM-VB-AL5" secondAttribute="trailing" constant="107" id="TDm-xR-lH2"/>
+                                    <constraint firstItem="uJM-x1-ubd" firstAttribute="top" secondItem="nXX-t4-Mq4" secondAttribute="top" constant="100" id="Vsq-rQ-WNl"/>
+                                    <constraint firstAttribute="trailing" secondItem="uJM-x1-ubd" secondAttribute="trailing" constant="107" id="ZDu-kR-CQ5"/>
+                                    <constraint firstItem="5BJ-gJ-yB6" firstAttribute="top" secondItem="uJM-x1-ubd" secondAttribute="bottom" constant="26" id="bdo-Pg-F5h"/>
+                                    <constraint firstItem="IfF-IF-Bp5" firstAttribute="centerX" secondItem="nXX-t4-Mq4" secondAttribute="centerX" id="cKJ-GW-POt"/>
+                                    <constraint firstItem="z1V-OF-pnu" firstAttribute="centerX" secondItem="nXX-t4-Mq4" secondAttribute="centerX" id="g7l-vX-AnG"/>
+                                    <constraint firstItem="a2z-lq-8J3" firstAttribute="top" secondItem="z1V-OF-pnu" secondAttribute="bottom" constant="8" id="huc-CR-8Xb"/>
+                                    <constraint firstItem="z1V-OF-pnu" firstAttribute="top" secondItem="GXM-VB-AL5" secondAttribute="bottom" constant="35" id="lfu-s6-D3k"/>
+                                    <constraint firstItem="IfF-IF-Bp5" firstAttribute="top" secondItem="a2z-lq-8J3" secondAttribute="bottom" constant="46" id="q50-Y7-EhV"/>
+                                    <constraint firstItem="GXM-VB-AL5" firstAttribute="centerX" secondItem="nXX-t4-Mq4" secondAttribute="centerX" id="tYh-cn-wUd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.84700586639999997" green="0.89805835619999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nXX-t4-Mq4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5Kf-9S-UDP"/>
+                            <constraint firstItem="nXX-t4-Mq4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZLZ-0S-rD6"/>
+                            <constraint firstItem="nXX-t4-Mq4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bKc-pU-heR"/>
+                            <constraint firstItem="nXX-t4-Mq4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qq9-xh-l3m"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginLabel" destination="5BJ-gJ-yB6" id="Bde-0F-Qnf"/>
+                        <outlet property="nameLabel" destination="uJM-x1-ubd" id="nlu-Qv-L6k"/>
+                        <outlet property="passwordLabel" destination="z1V-OF-pnu" id="CYw-Lu-gWo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="216" y="62"/>
         </scene>
     </scenes>
 </document>
