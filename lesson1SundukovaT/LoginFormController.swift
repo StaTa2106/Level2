@@ -109,3 +109,4 @@ class LoginFormController: UIViewController {
     }
     
 }
+//комментарии написаны чтобы потом было легче соориентироваться
