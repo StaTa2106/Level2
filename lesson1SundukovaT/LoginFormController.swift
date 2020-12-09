@@ -21,7 +21,8 @@ class LoginFormController: UIViewController {
             print("Empty")
         }
     }
-    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {}
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -90,7 +91,7 @@ class LoginFormController: UIViewController {
         guard let login = loginTextField.text,
               let password = passwordTextField.text else { return false }
         
-        if login == "admin" && password == "123456" {
+        if login == "1" && password == "1" {
             return true
         } else {
             return false
