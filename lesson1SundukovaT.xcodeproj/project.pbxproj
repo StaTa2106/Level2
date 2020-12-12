@@ -11,6 +11,12 @@
 		59676C852580C3D1007FDEFA /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59676C842580C3D1007FDEFA /* FriendsCell.swift */; };
 		59676C8B2580C4D7007FDEFA /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59676C8A2580C4D7007FDEFA /* GroupsController.swift */; };
 		59676C902580C521007FDEFA /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59676C8F2580C521007FDEFA /* GroupsCell.swift */; };
+		59676C9625810C44007FDEFA /* FriendsPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59676C9525810C44007FDEFA /* FriendsPhotosViewController.swift */; };
+		59676C9B25810C79007FDEFA /* FriendsPhotosViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59676C9A25810C79007FDEFA /* FriendsPhotosViewCell.swift */; };
+		59676CAA25820D0A007FDEFA /* SearchGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59676CA925820D0A007FDEFA /* SearchGroupController.swift */; };
+		59676CAF25820D56007FDEFA /* SearchGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59676CAE25820D56007FDEFA /* SearchGroupCell.swift */; };
+		5993D74E2584A1D80038FC1A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993D74D2584A1D80038FC1A /* Users.swift */; };
+		5993D7532584A28E0038FC1A /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993D7522584A28E0038FC1A /* Groups.swift */; };
 		59EA855F2578F7F70044C0F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA855E2578F7F70044C0F2 /* AppDelegate.swift */; };
 		59EA85612578F7F70044C0F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA85602578F7F70044C0F2 /* SceneDelegate.swift */; };
 		59EA85662578F7F70044C0F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EA85642578F7F70044C0F2 /* Main.storyboard */; };
@@ -43,6 +49,12 @@
 		59676C842580C3D1007FDEFA /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		59676C8A2580C4D7007FDEFA /* GroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
 		59676C8F2580C521007FDEFA /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
+		59676C9525810C44007FDEFA /* FriendsPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosViewController.swift; sourceTree = "<group>"; };
+		59676C9A25810C79007FDEFA /* FriendsPhotosViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosViewCell.swift; sourceTree = "<group>"; };
+		59676CA925820D0A007FDEFA /* SearchGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupController.swift; sourceTree = "<group>"; };
+		59676CAE25820D56007FDEFA /* SearchGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupCell.swift; sourceTree = "<group>"; };
+		5993D74D2584A1D80038FC1A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		5993D7522584A28E0038FC1A /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		59EA855B2578F7F70044C0F2 /* lesson1SundukovaT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson1SundukovaT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EA855E2578F7F70044C0F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59EA85602578F7F70044C0F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +114,33 @@
 			path = Groups;
 			sourceTree = "<group>";
 		};
+		59676C9425810BAD007FDEFA /* FriendsPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				59676C9525810C44007FDEFA /* FriendsPhotosViewController.swift */,
+				59676C9A25810C79007FDEFA /* FriendsPhotosViewCell.swift */,
+			);
+			path = FriendsPhotos;
+			sourceTree = "<group>";
+		};
+		59676CA525820C9C007FDEFA /* SearchForGroup */ = {
+			isa = PBXGroup;
+			children = (
+				59676CA925820D0A007FDEFA /* SearchGroupController.swift */,
+				59676CAE25820D56007FDEFA /* SearchGroupCell.swift */,
+			);
+			path = SearchForGroup;
+			sourceTree = "<group>";
+		};
+		5993D74925849F980038FC1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5993D74D2584A1D80038FC1A /* Users.swift */,
+				5993D7522584A28E0038FC1A /* Groups.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		59EA85522578F7F70044C0F2 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +164,9 @@
 		59EA855D2578F7F70044C0F2 /* lesson1SundukovaT */ = {
 			isa = PBXGroup;
 			children = (
+				5993D74925849F980038FC1A /* Model */,
+				59676CA525820C9C007FDEFA /* SearchForGroup */,
+				59676C9425810BAD007FDEFA /* FriendsPhotos */,
 				59676C892580C4B3007FDEFA /* Groups */,
 				59676C7B2580C33B007FDEFA /* Friends */,
 				59EA855E2578F7F70044C0F2 /* AppDelegate.swift */,
@@ -287,11 +329,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				59EA85A02578F9800044C0F2 /* LoginFormController.swift in Sources */,
+				5993D74E2584A1D80038FC1A /* Users.swift in Sources */,
+				59676CAA25820D0A007FDEFA /* SearchGroupController.swift in Sources */,
+				59676C9B25810C79007FDEFA /* FriendsPhotosViewCell.swift in Sources */,
+				5993D7532584A28E0038FC1A /* Groups.swift in Sources */,
+				59676C9625810C44007FDEFA /* FriendsPhotosViewController.swift in Sources */,
 				59676C8B2580C4D7007FDEFA /* GroupsController.swift in Sources */,
 				59676C852580C3D1007FDEFA /* FriendsCell.swift in Sources */,
 				59676C7D2580C39A007FDEFA /* FriendsController.swift in Sources */,
 				59EA855F2578F7F70044C0F2 /* AppDelegate.swift in Sources */,
 				59676C902580C521007FDEFA /* GroupsCell.swift in Sources */,
+				59676CAF25820D56007FDEFA /* SearchGroupCell.swift in Sources */,
 				59EA85612578F7F70044C0F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

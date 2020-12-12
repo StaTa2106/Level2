@@ -1,21 +1,17 @@
 //
-//  GroupsCell.swift
+//  SearchGroupCell.swift
 //  lesson1SundukovaT
 //
-//  Created by Татьяна Сундукова on 09.12.2020.
+//  Created by Татьяна Сундукова on 10.12.2020.
 //
 
 import UIKit
 
-class GroupsCell: UITableViewCell {
+class SearchGroupCell: UITableViewCell {
 
-    @IBOutlet weak var imageMyGroup: UIImageView!
-    
-    @IBOutlet weak var nameMyGroup: UILabel!
-    
-    @IBOutlet weak var infoMyGroup: UILabel!
-    
-    
+    @IBOutlet weak var infoGroupLabel: UILabel!
+    @IBOutlet weak var nameGroupLabel: UILabel!
+    @IBOutlet weak var imageGroup: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

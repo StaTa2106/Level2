@@ -1,62 +1,61 @@
 //
-//  FriendsController.swift
+//  SearchGroupController.swift
 //  lesson1SundukovaT
 //
-//  Created by Татьяна Сундукова on 09.12.2020.
+//  Created by Татьяна Сундукова on 10.12.2020.
 //
 
 import UIKit
-struct Username {
-  let name: String
-let avatar: UIImage?
-}
 
-class FriendsController: UITableViewController {
-    var allFriends = [
-         Username(name: "Batman", avatar: UIImage(named: "Batman")),
-        Username(name: "Cinderella", avatar: UIImage(named: "Cinderella")),
-         Username(name: "Prince", avatar: UIImage(named: "Prince"))
+class SearchGroupController: UITableViewController {
+    var searchGroup = [
+        "Save the World",
+        "Diamonds",
+        "Love",
+        "Cats",
     ]
-    
+    var infoGroup = [
+    "Let's save the Planet",
+        "Diamonds are amazing",
+        "What is LOVE?",
+        "We love cats"
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 100
 
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        allFriends.count
+        // #warning Incomplete implementation, return the number of rows
+        searchGroup.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
-     as! FriendsCell
-        let friend = allFriends[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchGroup", for: indexPath) as! SearchGroupCell
+        let group = searchGroup[indexPath.row]
+        let slogan = infoGroup[indexPath.row]
+        //cell.nameGroupLabel.text = group
+
+        
         var content = cell.defaultContentConfiguration()
-        content.text = friend.name
-        content.image = friend.avatar
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
-        
-        
+        content.text = group
+        content.secondaryText = slogan
+        content.image = UIImage(named: group)
         cell.contentConfiguration = content
         return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard
-            segue.identifier == "showFriendImage",
-            let controller = segue.destination as? FriendsPhotosViewController,
-            let index = tableView.indexPathForSelectedRow,
-            let avatar = allFriends[index.row].avatar
-        else { return }
-        controller.allPhotos = [avatar]
     }
     
 
