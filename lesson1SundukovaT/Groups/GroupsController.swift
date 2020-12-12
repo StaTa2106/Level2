@@ -7,25 +7,36 @@
 
 import UIKit
 
-class GroupsController: UITableViewController {
-    var searchGroup = [String] ()
+struct MyGroups  {
+    var name: String
+    var slogan: String
+    var avatar: UIImage
+}
 
+class GroupsController: UITableViewController {
+    
+    
+    
+    var searchGroup = [String] ()
     var infoGroup = [String] ()
     
-   
-
+    
+    
     @IBAction func addGroup (segue: UIStoryboardSegue) {
         if segue.identifier == "addGroup" {
             
-           guard let searchGroupController = segue.source as? SearchGroupController
-           else {return}
+            guard let searchGroupController = segue.source as? SearchGroupController
+            else {return}
             if let indexPath = searchGroupController.tableView.indexPathForSelectedRow {
-                let group = searchGroupController.searchGroup[indexPath.row]
-                let info = searchGroupController.infoGroup[indexPath.row]
-                if !searchGroup.contains(group) && !infoGroup.contains(info) {
-                
-                    searchGroup.append(group)
-                    infoGroup.append(info)
+                // let myGr = allFriends[indexPath.row]
+                let myGroups = searchGroupController.searchGroup[indexPath.row]
+                let myGroupsName = myGroups.name
+                let myGroupsInfo = myGroups.infoGroup
+                //let info = searchGroupController.infoGroup[indexPath.row]
+                if !searchGroup.contains(myGroupsName) && !infoGroup.contains(myGroupsInfo) {
+                    
+                    searchGroup.append(myGroupsName)
+                    infoGroup.append(myGroupsInfo)
                     tableView.reloadData()
                 }
             }
@@ -35,13 +46,13 @@ class GroupsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         searchGroup.count
@@ -51,14 +62,14 @@ class GroupsController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroups", for: indexPath) as! GroupsCell
         let group = searchGroup[indexPath.row]
         let slogan = infoGroup[indexPath.row]
-
+        
         
         var content = cell.defaultContentConfiguration()
         content.text = group
         content.secondaryText = slogan
         content.image = UIImage(named: group)
         cell.contentConfiguration = content
-
+        
         return cell
     }
     

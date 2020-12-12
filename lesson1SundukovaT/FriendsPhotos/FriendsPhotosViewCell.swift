@@ -11,5 +11,4 @@ class FriendsPhotosViewCell: UICollectionViewCell {
     
     @IBOutlet weak var icon: UIImageView!
     
-    
 }

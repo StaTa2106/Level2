@@ -7,53 +7,44 @@
 
 import UIKit
 
+struct Groups {
+    let name: String
+    let infoGroup: String
+    let avatar: UIImage?
+}
 class SearchGroupController: UITableViewController {
+    
     var searchGroup = [
-        "Save the World",
-        "Diamonds",
-        "Love",
-        "Cats",
+        Groups(name: "Save the World", infoGroup: "Let's save the Planet", avatar: UIImage(named: "Save the World")),
+        Groups(name: "Diamonds", infoGroup: "Diamonds are amazing", avatar: UIImage(named: "Diamonds")),
+        Groups(name: "Love", infoGroup: "What is LOVE?", avatar: UIImage(named: "Love")),
+        Groups(name: "Cats", infoGroup: "We love cats", avatar: UIImage(named: "Cats"))
     ]
-    var infoGroup = [
-    "Let's save the Planet",
-        "Diamonds are amazing",
-        "What is LOVE?",
-        "We love cats"
-    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         searchGroup.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchGroup", for: indexPath) as! SearchGroupCell
-        let group = searchGroup[indexPath.row]
-        let slogan = infoGroup[indexPath.row]
-        //cell.nameGroupLabel.text = group
-
-        
+        let users = searchGroup[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = group
-        content.secondaryText = slogan
-        content.image = UIImage(named: group)
+        content.text = users.name
+        content.secondaryText = users.infoGroup
+        content.image = users.avatar
         cell.contentConfiguration = content
         return cell
     }

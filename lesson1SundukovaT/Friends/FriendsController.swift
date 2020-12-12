@@ -7,37 +7,37 @@
 
 import UIKit
 struct Username {
-  let name: String
-let avatar: UIImage?
+    let name: String
+    let avatar: UIImage?
 }
 
 class FriendsController: UITableViewController {
     var allFriends = [
-         Username(name: "Batman", avatar: UIImage(named: "Batman")),
+        Username(name: "Batman", avatar: UIImage(named: "Batman")),
         Username(name: "Cinderella", avatar: UIImage(named: "Cinderella")),
-         Username(name: "Prince", avatar: UIImage(named: "Prince"))
+        Username(name: "Prince", avatar: UIImage(named: "Prince"))
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 100
-
+        
     }
-
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         allFriends.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
-     as! FriendsCell
+            as! FriendsCell
         let friend = allFriends[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = friend.name
