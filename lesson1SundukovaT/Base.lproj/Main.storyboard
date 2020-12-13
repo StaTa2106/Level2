@@ -404,6 +404,17 @@
                                                 <constraint firstAttribute="height" constant="435" id="0OS-5B-QXq"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="❤️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-6A-rJI">
+                                            <rect key="frame" x="38" y="397" width="23" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="oTj-oo-2Td" appends="YES" id="lYV-zc-5Wg"/>
+                                            </connections>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="oqn-p4-SfC" firstAttribute="leading" secondItem="bXz-rG-hYw" secondAttribute="leading" id="Cvh-1e-7hF"/>
@@ -426,6 +437,7 @@
                     <navigationItem key="navigationItem" title="Photos" id="ec8-rp-w2d"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omj-Ot-bkQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oTj-oo-2Td"/>
             </objects>
             <point key="canvasLocation" x="5034.7826086956529" y="-333.48214285714283"/>
         </scene>

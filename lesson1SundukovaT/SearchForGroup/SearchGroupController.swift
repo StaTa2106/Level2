@@ -7,18 +7,18 @@
 
 import UIKit
 
-struct Groups {
+/*struct Groups {
     let name: String
     let infoGroup: String
     let avatar: UIImage?
-}
+}*/
 class SearchGroupController: UITableViewController {
     
     var searchGroup = [
-        Groups(name: "Save the World", infoGroup: "Let's save the Planet", avatar: UIImage(named: "Save the World")),
-        Groups(name: "Diamonds", infoGroup: "Diamonds are amazing", avatar: UIImage(named: "Diamonds")),
-        Groups(name: "Love", infoGroup: "What is LOVE?", avatar: UIImage(named: "Love")),
-        Groups(name: "Cats", infoGroup: "We love cats", avatar: UIImage(named: "Cats"))
+        SearchGroup(name: "Save the World", infoGroup: "Let's save the Planet", avatar: UIImage(named: "Save the World")),
+        SearchGroup(name: "Diamonds", infoGroup: "Diamonds are amazing", avatar: UIImage(named: "Diamonds")),
+        SearchGroup(name: "Love", infoGroup: "What is LOVE?", avatar: UIImage(named: "Love")),
+        SearchGroup(name: "Cats", infoGroup: "Everyone loves cats", avatar: UIImage(named: "Cats"))
     ]
     
     override func viewDidLoad() {

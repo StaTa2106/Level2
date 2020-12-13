@@ -62,8 +62,6 @@ class GroupsController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroups", for: indexPath) as! GroupsCell
         let group = searchGroup[indexPath.row]
         let slogan = infoGroup[indexPath.row]
-        
-        
         var content = cell.defaultContentConfiguration()
         content.text = group
         content.secondaryText = slogan
@@ -81,6 +79,4 @@ class GroupsController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-    
-    
 }

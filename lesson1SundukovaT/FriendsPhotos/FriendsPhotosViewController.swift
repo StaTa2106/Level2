@@ -8,31 +8,26 @@
 import UIKit
 
 class FriendsPhotosViewController: UICollectionViewController {
-    
-    var allPhotos = [UIImage]()
+    var friend: Users!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       // title = friend.name
     }
-    
-    // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
-    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return allPhotos.count
+        return friend.photo.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FriendsPhotosViewCell", for: indexPath) as! FriendsPhotosViewCell
-        //let friend = allFriends[indexPath.item]
-        cell.icon.image = allPhotos[indexPath.row]
-        
+        let photo = friend.photo [indexPath.row]
+        cell.icon.image = photo
         return cell
     }
     
